@@ -24,7 +24,7 @@
                         <li><a href="#about">About</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#services">Services</a></li>
-                        <li><a href="#slider">What's New</a></li>
+                        <li><a href="#slider">What New</a></li>
                         <li><a href="#blogs">Blogs</a></li>
                         <li><a href="#contacts">Contacts</a></li>
                     </ul>
@@ -43,7 +43,7 @@
                         <h1>Zhivko Georgiev</h1>
                         <h3>Front End Web Developer</h3>
                         <div class="cv-btn">
-                            <a href="">My Portfolio</a>
+                            <a href="#portfolio">My Portfolio</a>
                         </div>
                     </div>
                 </div>
@@ -106,19 +106,104 @@
     <!--End About section-->
 
     <!--Start Message Text section-->
-    <section class="message-text">
+    <!-- <section class="message-text">
         <div class="container">
             <div class="row">
                 <div class="text">
                     <h2>Web Developer, click the button to download</h2>
                 </div>
                 <div class="button">
-                    <a href="" download="">DOWNLOAD CV</a>
+                    <a href="">DOWNLOAD CV</a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!--End Message Text section-->
+
+    <!--Start Portfolio section-->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="section-title" style="text-align: center;">
+                    <h1>My Portfolio</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="filter-buttons">
+                    <ul id="filter-btns">
+                        <li class="active" data-target="all">All</li>
+                        <li data-target="town">Town</li>
+                        <li data-target="sea">Sea</li>
+                        <li data-target="mountain">Mountain</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="portfolio-gallery">
+                    <div class="item" data-id="sea">
+                        <div class="inner">
+                            <img src="/images/portfolio/pexels-asad-photo-maldives-3601422.jpg" alt="01">
+                            <div class="overlay">
+                                <span class="fas fa-plus"></span>
+                                <h4>Sea</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="town">
+                        <div class="inner">
+                            <img src="/images/Slider/2.jpg" alt="02">
+                            <div class="overlay">
+                                <span class="fas fa-plus"></span>
+                                <h4>Town</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="town">
+                        <div class="inner">
+                            <img src="/images/Slider/2.jpg" alt="03">
+                            <div class="overlay">
+                                <span class="fas fa-plus"></span>
+                                <h4>Town</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="mountain">
+                        <div class="inner">
+                            <img src="/images/portfolio/pexels-mateusz-sałaciak-4275885.jpg" alt="04">
+                            <div class="overlay">
+                                <span class="fas fa-plus"></span>
+                                <h4>Mountain</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="mountain">
+                        <div class="inner">
+                            <img src="/images/portfolio/pexels-sagui-andrea-618833.jpg" alt="05">
+                            <div class="overlay">
+                                <span class="fas fa-plus"></span>
+                                <h4>Mountain</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-id="sea">
+                        <div class="inner">
+                            <img src="/images/portfolio/pexels-pixabay-269583.jpg" alt="06">
+                            <div class="overlay">
+                                <span class="fas fa-plus"></span>
+                                <h4>Sea</h4>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--End Message Text section-->
+    <!--End Portfolio section-->
+
+    <div class="lightbox">
+        <span class="close-lightbox fas fa-times"></span>
+        <img src="" alt="">
+    </div>
 
     <!--Start Services section-->
     <section class="services" id="services">
@@ -178,6 +263,11 @@
     </section>
     <!--End Services section-->
 
+    <div class="row">
+        <div class="section-title" style="text-align: center;">
+            <h1>WHAT NEW</h1>
+        </div>
+    </div>
     <!--Start Slides section-->
     <section class="slidehome" id="slider">
         <div class="slider-container">
