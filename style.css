@@ -1,0 +1,563 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-title {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 40px;
+}
+.section-title h1 {
+  display: inline-block;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 5px;
+  position: relative;
+}
+.section-title h1::before {
+  content: "";
+  height: 2px;
+  background-color: lightseagreen;
+  position: absolute;
+  bottom: 0;
+  width: 50px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: all 0.3s ease !important;
+}
+.section-title h1:hover::before {
+  width: 100% !important;
+}
+
+/* Start Header */
+
+header {
+  top: 0;
+  background: #000000;
+  position: sticky;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #423940;
+  padding: 0 15px;
+  z-index: 10;
+}
+
+header .row {
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .brand-name a {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  position: relative;
+}
+
+header .brand-name a::before {
+  content: "";
+  height: 3px;
+  background: lightseagreen;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+header .navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header .navbar ul li {
+  display: inline-block;
+  margin-left: 35px;
+}
+
+header .navbar ul li a {
+  font-size: 15px;
+  text-decoration: none;
+  line-height: 75px;
+  color: #ffffff;
+  display: block;
+  font-weight: 600;
+  position: relative;
+}
+
+header .navbar ul li a::before {
+  content: "";
+  height: 3px;
+  background-color: #ffffff;
+  width: 0;
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  transition: all 0.5s ease;
+}
+
+header .navbar ul li a:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+header .navbar ul li a.active::before {
+  width: 100%;
+  left: 0;
+}
+/* End Header section */
+
+/* Start Home section */
+.home {
+  min-height: 100vh;
+  background-image: url(./images/pexels-riccardo-bresciani-307008.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 15px;
+}
+
+.home .full-screen {
+  min-height: 100vh;
+}
+
+.home .home-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.home .block {
+  flex: 0 0 75%;
+  max-width: 75%;
+  padding-left: 35px;
+  margin-top: -700px;
+}
+
+.home .block h1 {
+  color: #000;
+  font-size: 60px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+.home .block h3 {
+  color: #000;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+.home .block .cv-btn {
+  padding-top: 20px;
+}
+
+.home .block .cv-btn a {
+  border-radius: 10px;
+  color: #000;
+  border: 2px solid #000;
+  padding: 12px 25px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.home .block .cv-btn a:hover {
+  background: #ffffff;
+  color: #000000;
+}
+/* End Home section */
+
+/* Start About section */
+.about {
+  padding: 100px 15px;
+  background-color: #ffffff;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.about .section-title p .small {
+  display: block;
+  font-size: 15px;
+  color: #838383;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.about-content .img {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+.about-content .img img {
+  width: 100%;
+  display: block;
+}
+.about-content .text {
+  flex: 0 0 66.66%;
+  max-width: 66.66%;
+  padding-left: 30px;
+}
+.about-content .text h4 {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0 0 5px;
+  color: #000000;
+  border-bottom: 2px solid #000000;
+}
+.about-content .text h6 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 15px;
+  color: #000000;
+}
+.about-content .text h6 span {
+  color: lightseagreen;
+}
+.about-content .text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #838383;
+  margin: 0 0 20px;
+}
+.about-content .text .info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.about-content .text .info .list {
+  flex: 0 0 calc(50% - 15px);
+  max-width: calc(50% - 15px);
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #2e1e1e;
+  padding-bottom: 10px;
+}
+.about-content .text .info .list label {
+  padding-right: 10px;
+  color: #000000;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.about-content .text .social-media {
+  padding-top: 40px;
+}
+.about-content .text .social-media a {
+  height: 30px;
+  width: 30px;
+  background-color: #2e1e1e;
+  border-radius: 50px;
+  display: inline-block;
+  border: 2px solid #000000;
+  line-height: 28px;
+  text-align: center;
+  margin: 0 1px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.about-content .text .social-media a:hover {
+  background-color: transparent;
+}
+.about-content .text .social-media a .fab {
+  color: #ffffff;
+  font-size: 16px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.about-content .text .social-media a:hover .fab {
+  color: #000000;
+}
+/* End About section */
+
+/* Start Message Text section */
+.message-text {
+  background-color: #0c0c17;
+  padding: 40px 15px;
+}
+
+.message-text .text {
+  flex: 0 0 66.66%;
+  max-width: 66.66%;
+}
+.message-text .text h2 {
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 35px;
+}
+
+.message-text .button {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  text-align: right;
+}
+
+.message-text .button a {
+  border-radius: 5px;
+  color: #ffffff;
+  border: 2px solid #eeeeee;
+  padding: 12px 30px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+.message-text .button a:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+/* End Message Text section */
+
+/* Start Services section */
+.services {
+  background-color: #f5f8fd;
+  padding: 100px 15px 70px;
+}
+
+.services .section-title {
+  text-align: center;
+}
+
+.services .service-contents {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services .service-contents .box {
+  background-color: #ffffff;
+  padding: 30px;
+  flex: 0 0 calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px);
+  margin-bottom: 30px;
+  border: 1px solid #eeeeee;
+  text-align: center;
+  position: relative;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.services .service-contents .box::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  box-sizing: border-box;
+  height: 0;
+  border-bottom: 2px solid transparent;
+  border-left: 2px solid transparent;
+  transition: all 0.5s ease;
+}
+
+.services .service-contents .box::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+  box-sizing: border-box;
+  height: 0;
+  border-top: 2px solid transparent;
+  border-right: 2px solid transparent;
+  transition: all 0.5s ease;
+}
+
+.services .service-contents .box:hover::before,
+.services .service-contents .box:hover::after {
+  border-color: lightseagreen;
+  width: 100%;
+  height: 100%;
+}
+
+.services .service-contents .box .icons {
+  height: 60px;
+  width: 60px;
+  color: lightseagreen;
+  /* background-color: #ff5722; */
+  margin: 15px auto 20px;
+  border-radius: 50%;
+  text-align: center;
+}
+.services .service-contents .box:hover .icons {
+  color: #ffffff;
+  background-color: lightseagreen;
+  transition: all 0.3s ease;
+}
+.services .service-contents .box:hover .icons .fas {
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.services .service-contents .box .icons .fas {
+  font-size: 35px;
+  color: lightseagreen;
+  line-height: 60px;
+}
+
+.services .service-contents .box p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #838383;
+  margin: 10px 0;
+}
+/* End Services section */
+
+/* Start Slides section */
+.slidehome {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.slidehome .slides {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  display: none;
+  padding: 0 15px;
+  animation: slides 1s ease;
+}
+.slidehome .slides.active {
+  display: flex;
+}
+@keyframes slides {
+  0% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.slidehome .container {
+  flex-grow: 1;
+}
+
+.slidehome .caption {
+  width: 50%;
+  position: absolute;
+  bottom: 10%;
+}
+
+.slidehome .caption h1 {
+  font-size: 40px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.slidehome .slides.active .caption h1 {
+  opacity: 0;
+  animation: caption 0.5s ease forwards;
+  animation-delay: 1s;
+}
+
+.slidehome .caption p {
+  font-size: 20px;
+  margin: 15px 0 30px;
+  color: #ffffff;
+}
+
+.slidehome .slides.active .caption p {
+  opacity: 0;
+  animation: caption 0.5s ease forwards;
+  animation-delay: 1.2s;
+}
+
+@keyframes caption {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.slidehome .controls .prev,
+.slidehome .controls .next {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  margin-top: -20px;
+  color: #ffffff;
+  background-color: #ff5722;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.slidehome .controls .prev:hover,
+.slidehome .controls .next:hover {
+  background-color: #000000;
+}
+
+.slidehome .controls .prev {
+  left: 0;
+}
+.slidehome .controls .next {
+  right: 0;
+}
+
+@media (max-width: 767px) {
+  .controls {
+    display: none;
+  }
+}
+/* End Slides section */
