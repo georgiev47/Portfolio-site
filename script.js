@@ -97,7 +97,14 @@ window.addEventListener('scroll', () => {
   }
 });
 
-
+// Contact Send button
 document.getElementById('contact-send').addEventListener('click',(e) => {
   e.preventDefault();
+});
+
+
+// Hamburger
+const hamburger = document.querySelector('header label');
+hamburger.addEventListener('click',function(){
+  document.querySelector('.navbar').classList.toggle('show');
 });
