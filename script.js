@@ -96,3 +96,8 @@ window.addEventListener('scroll', () => {
     }
   }
 });
+
+
+document.getElementById('contact-send').addEventListener('click',(e) => {
+  e.preventDefault();
+});

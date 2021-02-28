@@ -25,8 +25,7 @@
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#slider">What New</a></li>
-                        <li><a href="#blogs">Blogs</a></li>
-                        <li><a href="#contacts">Contacts</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -124,7 +123,7 @@
     <section class="portfolio" id="portfolio">
         <div class="container">
             <div class="row">
-                <div class="section-title" style="text-align: center;">
+                <div class="section-title">
                     <h1>My Portfolio</h1>
                 </div>
             </div>
@@ -263,13 +262,14 @@
     </section>
     <!--End Services section-->
 
-    <div class="row">
-        <div class="section-title" style="text-align: center;">
-            <h1>WHAT NEW</h1>
-        </div>
-    </div>
+    
     <!--Start Slides section-->
     <section class="slidehome" id="slider">
+        <div class="row">
+            <div class="section-title">
+                <h1>WHAT NEW</h1>
+            </div>
+        </div>
         <div class="slider-container">
             <div class="slides active" style="background-image: url('./images/Slider/1.jpg');">
                 <div class="container">
@@ -295,21 +295,104 @@
                     </div>
                 </div>
             </div>
+            <!--Start Slider controls-->
+            <div class="controls">
+                <div class="prev"> &#10094; </div>
+                <div class="next"> &#10095; </div>
+            </div>
+            <!--End Slider controls-->
         </div>
-
-        <!--Start Slider controls-->
-        <div class="controls">
-            <div class="prev"> &#10094; </div>
-            <div class="next"> &#10095; </div>
-        </div>
-        <!--End Slider controls-->
-
     </section>
     <!--End Slides section-->
 
 
+    <!--Start Contact section-->
+    <section class="contact" id="contact">
+        <div class="row">
+            <div class="section-title">
+                <h1>CONTACT ME</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="container-in">
+                <div class="contact-info">
+                    <div>
+                        <h2>Contact Info</h2>
+                        <ul class="info-in">
+                            <li>
+                                <span><i class="fas fa-map-marker" aria-hidden="true"></i></span>
+                                <span>Sofia<br/>Bulgaria</span>
+                            </li>
+                            <li>
+                                <span><i class="fas fa-envelope" aria-hidden="true"></i></span>
+                                <span>example@gmail.com</span>
+                            </li>
+                            <li>
+                                <span><i class="fas fa-phone" aria-hidden="true"></i></span>
+                                <span>0888 000 000</span>
+                            </li>
+                        </ul>
+                        <ul class="social-media-links">
+                            <li>
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-google"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <form action="">
+                    <div class="contact-form-in">
+                        <h2>Send a Message</h2>
+                        <div class="in-box-form">
+                            <div class="in-box-input row1">
+                                <input type="text" name="required" placeholder="Name">
+                            </div>
+                            <div class="in-box-input row1">
+                                <input type="email" name="required" placeholder="E-mail">
+                            </div>
+                            <div class="in-box-input row1">
+                                <input type="number" name="required" placeholder="Number">
+                            </div>
+                            <div class="in-box-input row1">
+                                <input type="text" name="required" placeholder="Subject">
+                            </div>
+                            <div class="in-box-input row2">
+                                <textarea name="" placeholder="Enter message here ..."></textarea>
+                            </div>
+                            <button type="submit" id="contact-send">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--End Contact section-->
 
-
+    <!--Start Footer-->
+    <footer>
+        <div class="contaier">
+            <div class="row">
+                <div class="logo">
+                    Front End Web Developer
+                </div>
+                <div class="social-media">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-google"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End Footer-->
 
     <script src="./script.js"></script>
 </body>
